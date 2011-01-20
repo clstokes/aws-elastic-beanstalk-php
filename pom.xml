@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.cameronstokes</groupId>
-    <artifactId>aws-php</artifactId>
-    <packaging>war</packaging>
-
-    <name>${artifactId} (war)</name>
-    <version>1.0.0-SNAPSHOT</version>
-
-    <build>
-    	<finalName>aws-php</finalName>
-    	<plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.1-alpha-2</version>
-                <configuration>
-                    <outputFileNameMapping>@{artifactId}@.@{extension}@</outputFileNameMapping>
-                </configuration>
-            </plugin>    	
-    	</plugins>
-    </build>
-
-    <dependencies>
-        <dependency>
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cameronstokes</groupId>
+	<artifactId>aws-php</artifactId>
+	<packaging>war</packaging>
+	
+	<name>${artifactId} (war)</name>
+	<version>1.0.0-SNAPSHOT</version>
+	
+	<build>
+		<finalName>aws-php</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1-alpha-2</version>
+				<configuration>
+					<outputFileNameMapping>@{artifactId}@.@{extension}@</outputFileNameMapping>
+				</configuration>
+			</plugin>    	
+		</plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
 			<groupId>com.caucho</groupId>
 			<artifactId>resin</artifactId>
 			<version>4.0.14</version>
-        </dependency>
-    </dependencies>
-
+		</dependency>
+	</dependencies>
+	
 	<repositories>
 		<repository>
 			<id>caucho</id>
@@ -42,7 +42,7 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
-		</repository>
+			</repository>
 	</repositories>
 
 </project>
